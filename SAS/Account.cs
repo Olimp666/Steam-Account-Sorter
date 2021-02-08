@@ -75,7 +75,7 @@ namespace SAS
             {
                 regex[0] = "STEAM_ID: ([0-9]*)";
                 regex[1] = "   Price of CS:GO items: ([0-9]*.[0-9]*)";
-                regex[2] = " Price Of This Account: ([0-9]*) рублей";
+                regex[2] = " Price Of This Account: ([0-9]*) rubles";
                 regex[3] = "   Balance: ([0-9]*.[0-9]*)";
                 regex[4] = "   Balance: [^\r\n\t\f\v ]* ([A-Z]{3})";
             }
