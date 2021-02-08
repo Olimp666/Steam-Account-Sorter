@@ -59,8 +59,26 @@ namespace SAS
             return Parse();
         }//
         static public string your_id;
+        static public string language;
         private List<Account> Parse()
         {
+            string[] regex=new string[5];
+            if(language=="ru")
+            {
+                regex[0] = "СТИМАЙДИ: ([0-9]*)";
+                regex[1] = "   Стоимость этих вещей: ([0-9]*.[0-9]*)";
+                regex[2]= " Стоимость Аккаунта: ([0-9]*) рублей";
+                regex[3] = "   Баланс: ([0-9]*.[0-9]*)";
+                regex[4] = "   Баланс: [^\r\n\t\f\v ]* ([A-Z]{3})";
+            }
+            else if(language=="en")
+            {
+                regex[0] = "STEAM_ID: ([0-9]*)";
+                regex[1] = "   Price of CS:GO items: ([0-9]*.[0-9]*)";
+                regex[2] = " Price Of This Account: ([0-9]*) рублей";
+                regex[3] = "   Balance: ([0-9]*.[0-9]*)";
+                regex[4] = "   Balance: [^\r\n\t\f\v ]* ([A-Z]{3})";
+            }
             List<Account> accs = new List<Account>();
             if (!Bazar.InStock)
             {
@@ -75,11 +93,11 @@ namespace SAS
                 for (int i = 0; i < rows; i++)
                 {
                     str = sr.ReadLine();
-                    Match m_id = Regex.Match(str, "СТИМАЙДИ: ([0-9]*)");
-                    Match m_inv = Regex.Match(str, "   Стоимость этих вещей: ([0-9]*.[0-9]*)");
-                    Match m_price = Regex.Match(str, " Стоимость Аккаунта: ([0-9]*) рублей");
-                    Match m_balance = Regex.Match(str, "   Баланс: ([0-9]*.[0-9]*)");
-                    Match m_currency = Regex.Match(str, "   Баланс: [^\r\n\t\f\v ]* ([A-Z]{3})");
+                    Match m_id = Regex.Match(str, regex[0]);
+                    Match m_inv = Regex.Match(str, regex[1]);
+                    Match m_price = Regex.Match(str, regex[2]);
+                    Match m_balance = Regex.Match(str, regex[3]);
+                    Match m_currency = Regex.Match(str, regex[4]);
                     if (m_id.Groups[1].Success)
                         Acc.id = m_id.Groups[1].ToString();
                     else if (m_inv.Groups[1].Success)

@@ -86,8 +86,9 @@ namespace SAS
             await Task.WhenAny(client.SendMessageAsync(peer, "Menu"));
             var po = GetHistory(client);
             int msg_id=GetMessageId(po);
+            GetLanguage(po);
 
-            if(IsCSGO)
+            if (IsCSGO)
             {
                 CSNumber = button_number;
                 button_number = 1;
@@ -133,6 +134,14 @@ namespace SAS
             DownloadFile(po, client);
         End:
             ;
+        }
+        public void GetLanguage(TLMessagesSlice msgs)
+        {
+            var lastmsg = (TLMessage)msgs.Messages.AsEnumerable().ElementAt(0);
+            if (lastmsg.Message == "📍 Choose what you need:")
+                Account.language = "en";
+            else if (lastmsg.Message == "📍 Выберите что вам нужно:")
+                Account.language = "ru";
         }
         public bool AccInStock(TLMessagesSlice messages)
         {
