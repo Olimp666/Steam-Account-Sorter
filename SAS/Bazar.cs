@@ -81,6 +81,7 @@ namespace SAS
         }
         public async Task RequestFile(TelegramClient client, int button_number)
         {
+            Account.your_id = client.Session.TLUser.Id.ToString();
             await GetAccessHash(client);
             await Task.WhenAny(client.SendMessageAsync(peer, "Menu"));
             var po = GetHistory(client);

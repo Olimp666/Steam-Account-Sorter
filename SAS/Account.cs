@@ -58,6 +58,7 @@ namespace SAS
         {
             return Parse();
         }
+        static public string your_id;
         private List<Account> Parse()
         {
             List<Account> accs = new List<Account>();
@@ -66,7 +67,7 @@ namespace SAS
                 Bazar.InStock = true;
                 return accs;
             }
-            StreamReader sr = new StreamReader("413994209.txt");
+            StreamReader sr = new StreamReader(your_id+".txt");
             string str;
             while (!sr.EndOfStream)
             {
