@@ -137,7 +137,7 @@ namespace SAS
         public bool AccInStock(TLMessagesSlice messages)
         {
             TLMessage message = (TLMessage)messages.Messages.AsEnumerable().ElementAt(0);
-            if (message.Message == "🕹 В этой категории пока нету аккаунтов\n🚁 Бот напишет вам как пополнит аккаунты")
+            if (message.Message == "🕹 В этой категории пока нету аккаунтов\n🚁 Бот напишет вам как пополнит аккаунты"||message.Message== "🕹 There currently are no available accounts in this category.\n🚁 Bot will send you a message after replenishment of accounts.")
                 return false;
             else
                 return true;
