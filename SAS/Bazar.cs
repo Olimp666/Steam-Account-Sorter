@@ -119,7 +119,7 @@ namespace SAS
                 };
                 client.SendRequestAsync<Object>(request).Wait();
             }
-
+            //
             if (!AccInStock(GetHistory(client)))
             {
                 InStock = false;
