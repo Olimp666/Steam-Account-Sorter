@@ -1,0 +1,17 @@
+C:\Users\olimp\source\repos\Acc\Acc\bin\Release\ObjectListView.dll
+C:\Users\olimp\source\repos\Acc\Acc\bin\Release\ObjectListView.pdb
+C:\Users\olimp\source\repos\Acc\Acc\bin\Release\ObjectListView.xml
+C:\Users\olimp\source\repos\Acc\Acc\obj\Release\Acc.csprojAssemblyReference.cache
+C:\Users\olimp\source\repos\Acc\Acc\obj\Release\Acc.Form1.resources
+C:\Users\olimp\source\repos\Acc\Acc\obj\Release\Acc.Properties.Resources.resources
+C:\Users\olimp\source\repos\Acc\Acc\obj\Release\Acc.csproj.GenerateResource.cache
+C:\Users\olimp\source\repos\Acc\Acc\obj\Release\Acc.csproj.CoreCompileInputs.cache
+C:\Users\olimp\source\repos\Acc\Acc\obj\Release\Acc.csproj.CopyComplete
+C:\Users\olimp\source\repos\Acc\Acc\bin\Release\TeleSharp.TL.dll
+C:\Users\olimp\source\repos\Acc\Acc\bin\Release\TLSharp.Core.dll
+C:\Users\olimp\source\repos\Acc\Acc\obj\Release\Acc.Form2.resources
+C:\Users\olimp\source\repos\Acc\Acc\bin\Release\SAS.exe.config
+C:\Users\olimp\source\repos\Acc\Acc\bin\Release\SAS.exe
+C:\Users\olimp\source\repos\Acc\Acc\bin\Release\SAS.pdb
+C:\Users\olimp\source\repos\Acc\Acc\obj\Release\SAS.exe
+C:\Users\olimp\source\repos\Acc\Acc\obj\Release\SAS.pdb

@@ -1,0 +1,15 @@
+C:\Users\olimp\source\repos\SAS\SAS\bin\Debug\SAS.exe.config
+C:\Users\olimp\source\repos\SAS\SAS\bin\Debug\SAS.exe
+C:\Users\olimp\source\repos\SAS\SAS\bin\Debug\SAS.pdb
+C:\Users\olimp\source\repos\SAS\SAS\bin\Debug\ObjectListView.dll
+C:\Users\olimp\source\repos\SAS\SAS\bin\Debug\TeleSharp.TL.dll
+C:\Users\olimp\source\repos\SAS\SAS\bin\Debug\TLSharp.Core.dll
+C:\Users\olimp\source\repos\SAS\SAS\obj\Debug\SAS.csprojAssemblyReference.cache
+C:\Users\olimp\source\repos\SAS\SAS\obj\Debug\SAS.Form1.resources
+C:\Users\olimp\source\repos\SAS\SAS\obj\Debug\SAS.Form2.resources
+C:\Users\olimp\source\repos\SAS\SAS\obj\Debug\Acc.Properties.Resources.resources
+C:\Users\olimp\source\repos\SAS\SAS\obj\Debug\SAS.csproj.GenerateResource.cache
+C:\Users\olimp\source\repos\SAS\SAS\obj\Debug\SAS.csproj.CoreCompileInputs.cache
+C:\Users\olimp\source\repos\SAS\SAS\obj\Debug\SAS.csproj.CopyComplete
+C:\Users\olimp\source\repos\SAS\SAS\obj\Debug\SAS.exe
+C:\Users\olimp\source\repos\SAS\SAS\obj\Debug\SAS.pdb
