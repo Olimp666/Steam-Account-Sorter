@@ -144,7 +144,20 @@ namespace SAS
         }
         public TLMessagesSlice GetHistory(TelegramClient client)
         {
-            return (TLMessagesSlice)client.GetHistoryAsync(peer).Result;
+            try
+            {
+                var result = (TLMessages)client.GetHistoryAsync(peer).Result;
+                TLMessagesSlice msgs= new TLMessagesSlice();
+                msgs.Messages = result.Messages;
+                msgs.Users = result.Users;
+                msgs.Chats = result.Chats;
+                return msgs;
+            }
+            catch(System.InvalidCastException)
+            {
+                var result = (TLMessagesSlice)client.GetHistoryAsync(peer).Result;
+                return result;
+            }
         }
         public bool IsMedia(TLMessagesSlice messages)
         {
