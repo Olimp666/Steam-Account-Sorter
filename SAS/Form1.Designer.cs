@@ -89,7 +89,6 @@ namespace SAS
             this.objectListView1.UseCompatibleStateImageBehavior = false;
             this.objectListView1.UseHyperlinks = true;
             this.objectListView1.View = System.Windows.Forms.View.Details;
-            this.objectListView1.SelectedIndexChanged += new System.EventHandler(this.objectListView1_SelectedIndexChanged);
             // 
             // olvColumn1
             // 
@@ -150,7 +149,6 @@ namespace SAS
             this.файлToolStripMenuItem.Name = "файлToolStripMenuItem";
             this.файлToolStripMenuItem.Size = new System.Drawing.Size(50, 20);
             this.файлToolStripMenuItem.Text = "Sorter";
-            this.файлToolStripMenuItem.Click += new System.EventHandler(this.файлToolStripMenuItem_Click);
             // 
             // выходToolStripMenuItem
             // 
@@ -179,7 +177,6 @@ namespace SAS
             this.aToolStripMenuItem.Name = "aToolStripMenuItem";
             this.aToolStripMenuItem.Size = new System.Drawing.Size(45, 20);
             this.aToolStripMenuItem.Text = "Load";
-            this.aToolStripMenuItem.Click += new System.EventHandler(this.aToolStripMenuItem_Click);
             // 
             // toolStripMenuItem2
             // 
@@ -197,7 +194,6 @@ namespace SAS
             this.cSGOToolStripMenuItem.Name = "cSGOToolStripMenuItem";
             this.cSGOToolStripMenuItem.Size = new System.Drawing.Size(163, 22);
             this.cSGOToolStripMenuItem.Text = "CS:GO";
-            this.cSGOToolStripMenuItem.Click += new System.EventHandler(this.cSGOToolStripMenuItem_Click);
             // 
             // pRIMEToolStripMenuItem
             // 
@@ -276,7 +272,6 @@ namespace SAS
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Steam Account Sorter";
-            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.objectListView1)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();

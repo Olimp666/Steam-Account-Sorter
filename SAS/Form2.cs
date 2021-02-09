@@ -31,16 +31,9 @@ namespace SAS
         {
             InitializeComponent();
         }
-        Bazar b = new Bazar();
         bool q = false;
         TelegramClient client = new TelegramClient(2172541, "d5a5a132ad869a3b238d7b17777e3007");
         string hash,number;
-
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
         async private void button1_Click(object sender, EventArgs e)
         {
             if (!q)
@@ -51,7 +44,9 @@ namespace SAS
                 try
                 {
                     hash = await client.SendCodeRequestAsync(number);
-                    textBox1.Text = "Code";
+                    label1.Left = 60;
+                    label1.Text = "Code";
+                    textBox1.Text = null;
                     button1.Text = "Authorize";
                 }
                 catch(System.InvalidOperationException)
