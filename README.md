@@ -3,9 +3,8 @@ It sorts stuff.
 
 Before running, make sure to message @steambuy_bot on Telegram
 
-Libraries used:
+## Libraries used:
 
+- [TLSharp](https://github.com/sochix/TLSharp)
 
-[TLSharp](https://github.com/sochix/TLSharp)
-
-[ObjectListView](http://objectlistview.sourceforge.net)
+- [ObjectListView](http://objectlistview.sourceforge.net)
